@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230928 22:21:14.270" rpa="false" schemaversion="4">
+<suite id="s1" name="Testrobot" source="g:\CODING\Python\LearningAutomation\RobotFramework\testrobot.robot">
+<test id="s1-t1" name="URL Test - Selenium Library" line="10">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.tesla.com/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230928 22:21:14.419" level="INFO">Opening browser 'Chrome' to base url 'https://www.tesla.com/'.</msg>
+<status status="PASS" starttime="20230928 22:21:14.418" endtime="20230928 22:21:17.463"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230928 22:21:17.463" endtime="20230928 22:21:17.582"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230928 22:21:27.585" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230928 22:21:17.583" endtime="20230928 22:21:27.585"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[5]/main/div/div[2]/div/section/div/div/div[1]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230928 22:21:27.603" level="INFO">Element 'xpath=/html/body/div[5]/main/div/div[2]/div/section/div/div/div[1]' is displayed.</msg>
+<status status="PASS" starttime="20230928 22:21:27.585" endtime="20230928 22:21:27.603"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[5]/main/div/div[2]/div/section/div/div/div[1]/section/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230928 22:21:27.604" level="INFO">Clicking element 'xpath=/html/body/div[5]/main/div/div[2]/div/section/div/div/div[1]/section/a[1]'.</msg>
+<status status="PASS" starttime="20230928 22:21:27.604" endtime="20230928 22:21:29.407"/>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" starttime="20230928 22:21:29.407" endtime="20230928 22:21:29.411"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230928 22:21:29.645" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230928 22:21:29.412" endtime="20230928 22:21:29.645"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230928 22:21:29.646" endtime="20230928 22:21:31.761"/>
+</kw>
+<status status="PASS" starttime="20230928 22:21:14.417" endtime="20230928 22:21:31.761"/>
+</test>
+<test id="s1-t2" name="URL Test - customKW Library" line="20">
+<kw name="Open Site" library="KW">
+<status status="PASS" starttime="20230928 22:21:31.762" endtime="20230928 22:21:35.071"/>
+</kw>
+<kw name="Click Services" library="KW">
+<msg timestamp="20230928 22:21:36.603" level="INFO">Ponieslismy sukces! Jestesmy na:  https://www.tesla.com/model3/design#overview</msg>
+<status status="PASS" starttime="20230928 22:21:35.071" endtime="20230928 22:21:36.603"/>
+</kw>
+<status status="PASS" starttime="20230928 22:21:31.762" endtime="20230928 22:21:36.604"/>
+</test>
+<status status="PASS" starttime="20230928 22:21:14.273" endtime="20230928 22:21:36.605"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Testrobot">Testrobot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
